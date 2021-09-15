@@ -4,8 +4,25 @@ describe('nGram', () => {
   it.each([
     ['Showmethecode.', ['Showmethecode'], ' '],
     ['Show methecode.', ['Show','Show methecode', 'methecode'], ' '],
+    ['Show    methecode.', ['Show','Show methecode', 'methecode'], ' '],
     [
       'Show me the code.',
+      [
+        'Show',
+        'Show me',
+        'Show me the',
+        'Show me the code',
+        'me',
+        'me the',
+        'me the code',
+        'the',
+        'the code',
+        'code'
+      ],
+      ' '
+    ],
+    [
+      'Show   me   the    code.',
       [
         'Show',
         'Show me',
