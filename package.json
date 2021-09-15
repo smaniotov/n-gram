@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec 'babel-node src/nGram.ts' --watch 'src/**/*.ts' -e ts",
+    "start": "nodemon --exec 'ts-node src/nGram.ts' --watch 'src/**/*.ts' -e ts",
     "build": "tsc",
     "test": "jest"
   },
