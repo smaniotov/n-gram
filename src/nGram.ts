@@ -3,7 +3,6 @@ const nGram = (text: string, separator: string = ' ') => {
 
   const list: string[] = normalizedText
     .split(separator)
-    .map(word => word.trim())
     .filter(Boolean);
 
   return list.reduce((out: string[], _: any, index: number) => {
